@@ -20,3 +20,11 @@ Route::get('/products', function () {
 })->name('products');
 
 Route::get('product/{id}', 'ProductController@showProductDetail');
+
+Route::get('foo', function() {
+	return asset('mycss/stype.css');
+});
+
+Route::get('catergories/man', function () {
+  return view('categories.man');
+});
