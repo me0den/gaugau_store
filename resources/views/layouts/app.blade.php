@@ -130,7 +130,7 @@
                 <!--/.navbar-collapse-->
                 <div class="clearfix"></div>
                 </nav>
-                <!--/.navbar-->   
+                <!--/.navbar-->
                 <div class="clearfix"></div>
             </div>
         </div>
@@ -140,7 +140,7 @@
                 <div class="col-md-2 re-ft-grd">
                     <h3>Categories</h3>
                     <ul class="categories">
-                        <li><a href="#">Men</a></li>
+                        <li><a href="man">Men</a></li>
                         <li><a href="#">Women</a></li>
                         <li><a href="#">Kids</a></li>
                         <li><a href="#">Formal</a></li>
