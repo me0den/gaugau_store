@@ -140,12 +140,12 @@
                 <div class="col-md-2 re-ft-grd">
                     <h3>Categories</h3>
                     <ul class="categories">
-                        <li><a href="man">Men</a></li>
-                        <li><a href="#">Women</a></li>
-                        <li><a href="#">Kids</a></li>
-                        <li><a href="#">Formal</a></li>
-                        <li><a href="#">Casuals</a></li>
-                        <li><a href="#">Sports</a></li>
+                        <li><a href="catergories/men">Men</a></li>
+                        <li><a href="catergories/women">Women</a></li>
+                        <li><a href="catergories/kids">Kids</a></li>
+                        <li><a href="catergories/formal">Formal</a></li>
+                        <li><a href="catergories/casuals">Casuals</a></li>
+                        <li><a href="catergories/sports">Sports</a></li>
                     </ul>
                 </div>
                 <div class="col-md-2 re-ft-grd">

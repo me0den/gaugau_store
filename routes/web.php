@@ -25,6 +25,23 @@ Route::get('foo', function() {
 	return asset('mycss/stype.css');
 });
 
-Route::get('catergories/man', function () {
-  return view('categories.man');
+Route::group(['prefix' => 'catergories'], function () {
+  Route::get('men', function () {
+    return view('categories.men');
+  });
+  Route::get('women', function () {
+    return view('categories.women');
+  });
+  Route::get('kids', function () {
+    return view('categories.kids');
+  });
+  Route::get('formal', function () {
+    return view('categories.formal');
+  });
+  Route::get('casuals', function () {
+    return view('categories.casuals');
+  });
+  Route::get('sports', function () {
+    return view('categories.sports');
+  });
 });
