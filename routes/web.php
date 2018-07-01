@@ -11,6 +11,10 @@
 |
 */
 
+//login
+Route::get('user/login', array('uses' => 'HomeController@showLogin'));
+// Route::get('user/login', array('uses' => 'HomeController@doLogin'));
+
 Route::get('/', function () {
     return view('home');
 });
@@ -27,7 +31,7 @@ Route::get('foo', function() {
 
 Route::group(['prefix' => 'catergories'], function () {
   Route::get('men', function () {
-    return view('categories.men');
+    return view('categories.content');
   });
   Route::get('women', function () {
     return view('categories.women');
