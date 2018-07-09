@@ -4,6 +4,7 @@
     License: Creative Commons Attribution 3.0 Unported
     License URL: http://creativecommons.org/licenses/by/3.0/
     -->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -25,6 +26,7 @@
         <script src="{{ asset('js/jquery-2.1.4.min.js') }}"></script>
         <!--bootstrap-js-->
         <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+
         <!--script-->
     </head>
     <body>
@@ -53,77 +55,7 @@
                 </div>
                 <div class="collapse navbar-collapse collapse-pdng" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav nav-font">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="{{ route('products') }}">Shoes</a></li>
-                                <li><a href="{{ route('products') }}">Tees</a></li>
-                                <li><a href="{{ route('products') }}">Tops</a></li>
-                                <li class="divider"></li>
-                                <li><a href="{{ route('products') }}">Tracks</a></li>
-                                <li class="divider"></li>
-                                <li><a href="{{ route('products') }}">Gear</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Men<b class="caret"></b></a>
-                            <ul class="dropdown-menu multi-column columns-3">
-                                <div class="row">
-                                    <div class="col-sm-4 menu-img-pad">
-                                        <ul class="multi-column-dropdown">
-                                            <li><a href="{{ route('products') }}">Joggers</a></li>
-                                            <li><a href="{{ route('products') }}">Foot Ball</a></li>
-                                            <li><a href="{{ route('products') }}">Cricket</a></li>
-                                            <li class="divider"></li>
-                                            <li><a href="{{ route('products') }}">Tennis</a></li>
-                                            <li class="divider"></li>
-                                            <li><a href="{{ route('products') }}">Casual</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-4 menu-img-pad">
-                                        <a href="#"><img src="{{ asset('images/menu1.jpg') }}" alt="/" class="img-rsponsive men-img-wid" /></a>
-                                    </div>
-                                    <div class="col-sm-4 menu-img-pad">
-                                        <a href="#"><img src="{{ asset('images/menu2.jpg') }}" alt="/" class="img-rsponsive men-img-wid" /></a>
-                                    </div>
-                                </div>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Women<b class="caret"></b></a>
-                            <ul class="dropdown-menu multi-column columns-2">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <ul class="multi-column-dropdown">
-                                            <li><a href="{{ route('products') }}">Tops</a></li>
-                                            <li><a href="{{ route('products') }}">Bottoms</a></li>
-                                            <li><a href="{{ route('products') }}">Yoga Pants</a></li>
-                                            <li class="divider"></li>
-                                            <li><a href="{{ route('products') }}">Sports</a></li>
-                                            <li class="divider"></li>
-                                            <li><a href="{{ route('products') }}">Gym</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <a href="#"><img src="{{ asset('images/menu3.jpg') }}" alt="/" class="img-rsponsive men-img-wid" /></a>
-                                    </div>
-                                </div>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">kids<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="{{ route('products') }}">Tees</a></li>
-                                <li><a href="{{ route('products') }}">Shorts</a></li>
-                                <li><a href="{{ route('products') }}">Gear</a></li>
-                                <li class="divider"></li>
-                                <li><a href="{{ route('products') }}">Watches</a></li>
-                                <li class="divider"></li>
-                                <li><a href="{{ route('products') }}">Shoes</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contact.html">Catch</a></li>
-                        <div class="clearfix"></div>
+                        <?php   echo $categories;  ?>
                     </ul>
                     <div class="clearfix"></div>
                 </div>

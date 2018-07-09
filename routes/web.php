@@ -29,23 +29,27 @@ Route::get('foo', function() {
 	return asset('mycss/stype.css');
 });
 
-Route::group(['prefix' => 'catergories'], function () {
+/** CATEGORIES **/
+Route::group(['prefix' => 'categories'], function () {
   Route::get('men', function () {
-    return view('categories.content');
+    return view('categories.content', array('name' => 'Categories - Men'));
   });
   Route::get('women', function () {
-    return view('categories.women');
+    return view('categories.content', array('name' => 'Categories - Women'));
   });
   Route::get('kids', function () {
-    return view('categories.kids');
+    return view('categories.content', array('name' => 'Categories - Kids'));
   });
   Route::get('formal', function () {
-    return view('categories.formal');
+    return view('categories.content', array('name' => 'Categories - Formal'));
   });
   Route::get('casuals', function () {
-    return view('categories.casuals');
+    return view('categories.content', array('name' => 'Categories - Casuals'));
   });
   Route::get('sports', function () {
-    return view('categories.sports');
+    return view('categories.content', array('name' => 'Categories - Sport'));
   });
 });
+
+//route test
+Route::get('test', 'HomeController@testRoute');
